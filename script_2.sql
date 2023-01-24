@@ -4,6 +4,7 @@ create table my.orders(
                           customer_id integer,
                           product_name char(252),
                           amount integer
+                          foreign key f_id(customer_id) referenses my.customers(id)
 );
 
 insert into my.orders(date, customer_id, product_name, amount)
